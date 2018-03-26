@@ -1,3 +1,3 @@
-This is my prectice repository
+This is my practice repository
 
 Includes some exercises of ruby python javascript and etc...
