@@ -1,3 +1,4 @@
+# read a csv file, and transform to hash
 def read_file file_name
   file = File.open file_name, 'r'
   data = file.read
@@ -6,5 +7,4 @@ def read_file file_name
 end
 data = read_file 'read.csv'
 array = data.split("\n")
-hashs = array.map{ |e| e.split(',').map(&:strip) }.to_h #.map{|e| {"#{e[0]}".strip => e[1].strip}}
-p hashs
+hashs = array.map{ |e| e.split(',').map(&:strip) }.to_h
