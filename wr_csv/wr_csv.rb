@@ -7,4 +7,4 @@ def read_file file_name
 end
 data = read_file 'read.csv'
 array = data.split("\n")
-hashs = array.map{ |e| e.split(',').map(&:strip) }.to_h
+hash = array.map{ |e| e.split(',').map(&:strip) }.to_h
